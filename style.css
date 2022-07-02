@@ -46,6 +46,9 @@ html {
 .padded-l  { padding-left: 5%;    }
 .padded-r  { padding-right: 5%;   }
 
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+
 .padded-0 { padding: 0; }
 .padded-b-0 { padding-bottom: 0; }
 .margin-b-0 { margin-bottom: 0; }
@@ -111,6 +114,7 @@ p:last-child{
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 nav a {
@@ -127,6 +131,15 @@ a:hover { color: #a2745c; }
   display: inline-block;
   font-weight: 400;
   color: white;
+}
+
+.button-dark{
+    text-decoration: none;
+    border: 2px solid; 
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-weight: 400;
+    color: black;
 }
 
 .bg-dark .button:hover {
@@ -178,6 +191,10 @@ footer a:hover {
     border-radius:100%;
 }
 
+.landscape {
+    padding-bottom: 60%;
+}
+
 .bg-plant {
     background-image: url('/images/plant.jpg');
     background-position: 50% 43%;
@@ -194,6 +211,55 @@ footer a:hover {
     background-image: url('/images/mockup.jpg');
 }
 
+.right-arrow {
+    max-width: 2rem;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+}
+
+
+/* Contact Forms */
+
+form input, 
+form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 2px solid #a2745c;
+    outline: none;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+form input: focus,
+form textarea: focus {
+    border-color: #9b9b81;
+}
+
+text-area {
+    min-height: 4rem;
+}
+
+form label {
+    margin-top: 1rem;
+    display: block;
+    color: #a2745c;
+    font-weight: bold;
+}
+
+form .button {
+    border: 2px solid #a2745c;
+    background: none;
+    color: #a2745c;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+}
+
+form .button:hover {
+    background: #a2745c;
+    color: white;
+}
 
 /* Responsive Video */
 
